@@ -122,3 +122,5 @@ VALUES ('James', 'King', 'Legal', 74000.00, 7300.00, 7100.00, 1400.00);
 INSERT INTO employee (first_name, last_name, department, salary, returns, tax, professional_tax) 
 VALUES ('Isabella', 'Hughes', 'HR', 67000.00, 6600.00, 6400.00, 1300.00);
 
+INSERT INTO users (username, password, role)
+VALUES ('Shashank', '$2a$10$wgXdyWa64TuUuE.sGeLkcuv.kxnKb/TOx0W68Hd.vTcrpyzt5I10u', 'ADMIN');

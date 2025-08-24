@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\shash\Desktop\codeRepos\employee-backend"/>
 			<item value="C:\Users\shash\OneDrive\Desktop\cricketIPL\practice"/>
 		</list>
 		<list key="projectNameTemplate">

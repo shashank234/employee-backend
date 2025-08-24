@@ -5,6 +5,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+
 @Entity
 public class Employee {
 
@@ -18,7 +19,7 @@ public class Employee {
     private Double returns;
     private Long tax;
     private Double professionalTax;
-
+    
     // Default constructor
     public Employee() {}
 
@@ -33,8 +34,7 @@ public class Employee {
         this.professionalTax = professionalTax;
     }
 
-
-    public Long getId() {
+	public Long getId() {
 		return id;
 	}
 
