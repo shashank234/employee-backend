@@ -5,6 +5,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -30,7 +31,9 @@ public class EmployeeService {
 		return new ResponseEntity<>(employeeRepository.saveAll(employee),HttpStatus.OK);
 	}
 	
+//	@Cacheable(value="employees")
 	public List<Employee> getAllEmployee() {
+		System.out.println("bye going to repo");
 		return employeeRepository.findAll();
 	}
 	
@@ -52,6 +55,7 @@ public class EmployeeService {
 		return new ResponseEntity<>(employees, HttpStatus.OK);
 	}
 	
+//	@Cacheable(value="employees")
 	public ResponseEntity<String> delEmployee(Long id) {
 		int res = employeeRepository.deleteEmployeeById(id);
 		if (res>0) {

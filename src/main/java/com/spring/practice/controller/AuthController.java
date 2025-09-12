@@ -38,8 +38,6 @@ public class AuthController {
             // Generate JWT token with UserDetails
             String token = jwtUtil.generateToken(userDetails);
             
-            System.out.println(token);
-
             return ResponseEntity.ok(token);
 
         } catch (AuthenticationException e) {

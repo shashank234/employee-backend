@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns="http://www.ehcache.org/schema/ehcache"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.ehcache.org/schema/ehcache 
+                             http://www.ehcache.org/schema/ehcache/ehcache-3.xsd">
+
+    <!-- Define a cache with a specific alias and configuration -->
+    <cache alias="sampleCache">
+        <!-- Configure the heap memory (in entries) -->
+        <heap unit="entries">1000</heap>
+        
+        <!-- Configure off-heap memory -->
+        <offheap unit="MB">10</offheap>
+        
+        <!-- Set the expiration time (TTL = time-to-live) -->
+        <expiry>
+            <ttl unit="minutes">10</ttl>  <!-- Set TTL to 10 minutes -->
+        </expiry>
+    </cache>
+
+    <!-- Optionally, you can define other caches or configuration settings -->
+</ehcache>

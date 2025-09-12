@@ -56,7 +56,7 @@ public class SecurityConfig {
         CorsConfiguration config = new CorsConfiguration();
 
         config.setAllowCredentials(true);
-        config.setAllowedOrigins(Arrays.asList("http://localhost:3000", "http://localhost:3001")); // frontend origins
+        config.setAllowedOrigins(Arrays.asList("http://localhost:3000", "http://localhost:3001","http://myemployee-shashank.s3-website-ap-northeast-1.amazonaws.com")); // frontend origins
         config.setAllowedHeaders(Arrays.asList("*"));
         config.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(Arrays.asList("Authorization", "Content-Type"));

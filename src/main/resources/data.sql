@@ -124,3 +124,9 @@ VALUES ('Isabella', 'Hughes', 'HR', 67000.00, 6600.00, 6400.00, 1300.00);
 
 INSERT INTO users (username, password, role)
 VALUES ('Shashank', '$2a$10$wgXdyWa64TuUuE.sGeLkcuv.kxnKb/TOx0W68Hd.vTcrpyzt5I10u', 'ADMIN');
+
+INSERT INTO users (username, password, role)
+VALUES ('Hrushikesh', '$2a$10$mhxLRppFtgOKEF0m9APhb.SchKvTaFJJViNvM5tiCAjLZHx46hyVC', 'ADMIN');
+
+INSERT INTO users (username, password, role)
+VALUES ('AKHIL', '$2a$10$mhxLRppFtgOKEF0m9APhb.SchKvTaFJJViNvM5tiCAjLZHx46hyVC', 'ADMIN');
